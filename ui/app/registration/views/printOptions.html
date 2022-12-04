@@ -1,0 +1,36 @@
+<div ng-show="emergencyTicketButton"  >
+<div ng-show="!reprint">
+	<div ng-show="admissionFromAccess[0].uuid" split-button="" options="printOptionsAdmission" option-text="buttonText"
+		option-click="print" primary-option="defaultPrintAdmission" class="right">
+	</div>
+	<div ng-show="!admissionFromAccess[0].uuid" split-button="" options="printOptions" option-text="buttonText"
+		option-click="print" primary-option="defaultPrint" class="right">
+	</div>
+</div>
+<div ng-show="reprint">
+	<div ng-show="admissionFromAccess[0].uuid" split-button="" options="printOptionsAdmissionForDev" option-text="buttonText"
+		option-click="print" primary-option="defaultPrintAdmissionForDev" class="right">
+	</div>
+	<div ng-show="!admissionFromAccess[0].uuid" split-button="" options="printOptionsForDev" option-text="buttonText"
+		option-click="print" primary-option="defaultPrintForDev" class="right">
+	</div>
+</div>
+</div>
+<div ng-show="opdTicketButton">
+	<div ng-show="!reprint">
+		<div ng-show="admissionFromAccess[0].uuid" split-button="" options="printOptionsAdmission"
+			option-text="buttonText" option-click="print" primary-option="defaultPrintAdmission" class="right">
+		</div>
+		<div ng-show="!admissionFromAccess[0].uuid" split-button="" options="printOptions" option-text="buttonText"
+			option-click="print" primary-option="defaultPrint" class="right">
+		</div>
+	</div>
+	<div ng-show="reprint">
+		<div ng-show="admissionFromAccess[0].uuid" split-button="" options="printOptionsAdmissionForDev"
+			option-text="buttonText" option-click="print" primary-option="defaultPrintAdmissionForDev" class="right">
+		</div>
+		<div ng-show="!admissionFromAccess[0].uuid" split-button="" options="printOptionsForDev"
+			option-text="buttonText" option-click="print" primary-option="defaultPrintForDev" class="right">
+		</div>
+	</div>
+</div>
